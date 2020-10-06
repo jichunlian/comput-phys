@@ -1,0 +1,8 @@
+#!/bin/bash
+dirpath=/home/node2/ljc/workdir/shortcut
+if [ $1 ]
+then
+  sed -i "$1 d" $dirpath/dir
+else
+  sed -i '$d' $dirpath/dir
+fi

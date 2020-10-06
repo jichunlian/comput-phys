@@ -1,0 +1,8 @@
+#!/bin/bash
+dirpath=/home/node2/ljc/workdir/shortcut
+if [ $1 ]
+then
+  cd `sed -n "$1 p"  $dirpath/dir`
+else
+  cd `tail -1 $dirpath/dir`
+fi
