@@ -1,0 +1,3 @@
+#!/bin/bash
+dirpath=/home/node2/ljc/workdir/shortcut
+cat -n $dirpath/dir

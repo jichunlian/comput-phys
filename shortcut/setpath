@@ -1,0 +1,5 @@
+#!/bin/bash
+dirpath=`pwd`
+sed -i "/dirpath=/c dirpath=$dirpath" \
+changedir deletedir savedir showdir
+echo "alias $1='source $dirpath/changedir'"
