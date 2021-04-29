@@ -100,8 +100,8 @@ program effmass
   allocate(mass(nkpts,2))
   allocate(db(nkpts,2))
   allocate(ddb(nkpts,2))
-  band(:,1)=eigen(:,nb)
-  band(:,2)=eigen(:,nb+1)
+  band(:,1)=eigen(nb,:)
+  band(:,2)=eigen(nb+1,:)
   forall (i=1:ng)
     dk(i)=k(nk*(i-1)+2)-k(nk*(i-1)+1)
   end forall
